@@ -40,6 +40,11 @@ img {
 
 .col-2 {
     flex-grow: 1;
+    text-align: center;
+}
+
+.col-3 {
+    text-align: right;
 }
 
 .center-col {
@@ -48,10 +53,6 @@ img {
     flex-basis: 500px;
     border: 2px dashed black ;
 }
-
-/* .row-2 {
-    background-color: red;
-} */
 
 .colonna1 {
     background-color: aqua;
@@ -77,56 +78,32 @@ img {
     background-color: lightgrey;
 }
 
-/* .footer-row {
-    background-color: gray;
-}
-
 .colonna-footer {
     min-height: 400px;
-    flex-basis: 100px;
     background-color: aqua;
     border: 1px solid white;
     flex-grow: 1;
-}
+} 
 
 .colonna-footer.left {
     background-color: pink;
     flex-grow: 2;
 }
 
-.footer-sub-row {
-    border-top: 1px solid white;
-}
-
-.sub-container {
-    border: 2px solid black;
-    padding: 20px;
-    width: 1000px;
-}
- 
 footer .container {
+    background-color: gray;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
-.colonna-footer-bottom {
-    min-height: 100px;
-    flex-basis: 300px;
-    background-color: orange;
-}
- */
-
 
  .row-footer {
-    background-color: gray;
-    padding: 10px;
- }
-
- .colonna-footer {
-    background-color: aqua;
-    min-height: 300px;
-    flex-basis: 100px;
-    border: 1px dashed white;
+    margin: 30px 0;
+    width: 500px;
+    justify-content: center;
+    padding: 0;
+    background-color: aquamarine;
  }
 
  .colonna-footer.left {
@@ -142,4 +119,16 @@ footer .container {
     min-height: 50px;
     flex-basis: 500px;
     background-color: orange;
+ }
+
+ .row-footer.bottom {
+    justify-content: space-between;
+    padding: 10px 0;
+ }
+
+ .row-footer.bottom > .col {
+    flex-basis: 80px;
+    border: 1px dashed black;
+    text-align: center;
+    min-height: 20px;
  }
