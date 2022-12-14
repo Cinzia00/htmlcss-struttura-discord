@@ -10,17 +10,18 @@ img {
 
 .container {
     max-height: 900px;
-    margin: 0 auto;    
+    margin: 0 auto;  
 }
 
 .row {
     display: flex;
     justify-content: center;
+    padding: 30px;
 }
 
 .row-3 {
     background-color: aquamarine;
-    padding: 5px;
+    padding: 20px;
 }
 
 .row-1 {
@@ -33,10 +34,12 @@ img {
     min-height: 40px;
     background-color: orange;
     padding: 5px;
-    flex-basis: 250px;
+    flex-basis: 200px;
     border: 2px dashed black ;
-    justify-content: space-between;
-    display: flex;
+}
+
+.col-2 {
+    flex-grow: 1;
 }
 
 .center-col {
@@ -46,5 +49,97 @@ img {
     border: 2px dashed black ;
 }
 
+/* .row-2 {
+    background-color: red;
+} */
+
+.colonna1 {
+    background-color: aqua;
+    min-height: 200px;
+    flex-basis: 300px;
+}
+
+.colonna2 {
+    background-color: pink;
+}
+
+.riga3 {
+    background-color: lightgrey;
+}
+
+.colonna3 {
+    min-height: 500px;
+    flex-basis: 500px;
+    background-color: green;
+}
+
+.riga4 {
+    background-color: lightgrey;
+}
+
+/* .footer-row {
+    background-color: gray;
+}
+
+.colonna-footer {
+    min-height: 400px;
+    flex-basis: 100px;
+    background-color: aqua;
+    border: 1px solid white;
+    flex-grow: 1;
+}
+
+.colonna-footer.left {
+    background-color: pink;
+    flex-grow: 2;
+}
+
+.footer-sub-row {
+    border-top: 1px solid white;
+}
+
+.sub-container {
+    border: 2px solid black;
+    padding: 20px;
+    width: 1000px;
+}
+ 
+footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+.colonna-footer-bottom {
+    min-height: 100px;
+    flex-basis: 300px;
+    background-color: orange;
+}
+ */
 
 
+ .row-footer {
+    background-color: gray;
+    padding: 10px;
+ }
+
+ .colonna-footer {
+    background-color: aqua;
+    min-height: 300px;
+    flex-basis: 100px;
+    border: 1px dashed white;
+ }
+
+ .colonna-footer.left {
+    background-color: pink;
+ }
+
+ .row-sub-footer {
+    background-color: gray;
+    border: 1px solid lightgray;
+ }
+
+ .colonna-sub-footer {
+    min-height: 50px;
+    flex-basis: 500px;
+    background-color: orange;
+ }
